@@ -1,0 +1,39 @@
+.hero {
+  background-image: url('/images/home/hero-bg-light.webp');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  block-size: 100vh;
+  overflow-x: clip;
+}
+
+.hero_fg {
+  background-image: url('/images/home/hero-fg.webp');
+  background-size: cover;
+  background-position: center;
+  inline-size: 100%;
+  block-size: 100%;
+  position: relative;
+}
+.hero_fg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  inset-block-end: -1px;
+  background-image: linear-gradient(to top, var(--mui-palette-background-default), transparent 50%);
+}
+
+.home_button {
+  @supports (corner-shape: squircle) {
+    border-radius: 100vw;
+    corner-shape: squircle;
+  }
+}
+
+.home_squircle {
+  border-radius: 20%;
+  @supports (corner-shape: squircle) {
+    border-radius: 100vw;
+    corner-shape: squircle;
+  }
+}

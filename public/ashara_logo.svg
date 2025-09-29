@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.36 175.01">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #56bf92;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 20px;
+      }
+
+      .cls-2 {
+        stroke: #29a3dc;
+      }
+
+      .cls-3 {
+        stroke: #006aa2;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-3" d="m17.72,48.53C29.42,25.66,53.22,10,80.68,10c39.04,0,70.68,31.64,70.68,70.68"/>
+      <path class="cls-3" d="m48.53,80.68c0-17.76,14.39-32.15,32.15-32.15s32.15,14.39,32.15,32.15"/>
+      <line class="cls-2" x1="10" y1="100.68" x2="10" y2="133.64"/>
+      <polyline class="cls-2" points="48.53 80.68 48.53 118.67 48.53 143.64 48.53 165.01"/>
+      <polyline class="cls-2" points="112.83 165.01 112.83 143.64 112.83 118.67 112.83 80.68"/>
+      <line class="cls-2" x1="151.36" y1="110.68" x2="151.36" y2="123.64"/>
+      <line class="cls-1" x1="80.68" y1="80.68" x2="80.68" y2="93.64"/>
+      <line class="cls-2" x1="80.68" y1="124.47" x2="80.68" y2="157.43"/>
+    </g>
+  </g>
+</svg>
