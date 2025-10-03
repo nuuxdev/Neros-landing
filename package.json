@@ -10,8 +10,9 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "build:icons": "tsx src/assets/iconify-icons/bundle-icons-css.ts",
-    "postinstall": "npm run build:icons"
+    "build:icons": "node --max-old-space-size=2048 node_modules/.bin/tsx src/assets/iconify-icons/bundle-icons-css.ts",
+    "build:icons:safe": "node --max-old-space-size=1024 node_modules/.bin/tsx src/assets/iconify-icons/bundle-icons-css.ts || echo 'Icon build failed, using fallback'",
+    "postinstall": "npm run build:icons:safe"
   },
   "dependencies": {
     "@emotion/cache": "11.14.0",
@@ -30,7 +31,8 @@
     "react-dom": "18.3.1",
     "react-perfect-scrollbar": "1.5.8",
     "react-use": "17.6.0",
-    "server-only": "0.0.1"
+    "server-only": "0.0.1",
+    "tsx": "4.19.2"
   },
   "devDependencies": {
     "@iconify/json": "2.2.286",
@@ -57,7 +59,6 @@
     "stylis-plugin-rtl": "2.1.1",
     "tailwindcss": "3.4.17",
     "tailwindcss-logical": "3.0.1",
-    "tsx": "4.19.2",
     "typescript": "5.5.4"
   },
   "resolutions": {

@@ -5,6 +5,8 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true
   },
   basePath: process.env.BASEPATH,
+  output: 'export',
+
   redirects: async () => {
     return [
       {
