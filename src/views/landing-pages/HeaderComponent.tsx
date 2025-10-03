@@ -1,9 +1,11 @@
 'use client'
 
-import CustomIconButton from '@/@core/components/mui/IconButton'
-import { Button } from '@mui/material'
 import Link from 'next/link'
 import Image from 'next/image'
+
+import { Button } from '@mui/material'
+
+import CustomIconButton from '@/@core/components/mui/IconButton'
 
 export default function HeaderComponent() {
   return (
@@ -19,7 +21,7 @@ export default function HeaderComponent() {
         <div className='flex items-center gap-2'>
           <div className='sm:size-20 size-16 my-2 sm:my-4  rounded-full overflow-clip shadow-md'>
             <Image
-              src='/neros.png'
+              src='/neros-new.png'
               alt='neros logo'
               width={100}
               height={100}
@@ -27,7 +29,7 @@ export default function HeaderComponent() {
               className='size-full object-cover'
             />
           </div>
-          <h1 className='hidden sm:block text-backgroundPaper'>Neros' Intl School</h1>
+          <h1 className='hidden sm:block text-backgroundPaper'>Neros&apos; Intl School</h1>
         </div>
         <div className='sm:space-x-2'>
           <CustomIconButton component={Link} href='https://t.me/Nerosschool' variant='text' className='text-white'>
