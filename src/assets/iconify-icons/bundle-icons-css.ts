@@ -66,8 +66,17 @@ async function generateIconsCSS() {
 
   const sources: BundleScriptConfig = {
     json: [
-      // Iconify JSON file (@iconify/json is a package name, /json/ is directory where files are, then filename)
-      require.resolve('@iconify/json/json/tabler.json')
+      // Load only specific icons from Tabler instead of the entire set
+      {
+        filename: require.resolve('@iconify/json/json/tabler.json'),
+        icons: [
+          // Common UI icons - add more as needed
+          'home', 'user', 'settings', 'menu-2', 'x', 'chevron-down', 'chevron-up', 
+          'chevron-left', 'chevron-right', 'search', 'bell', 'mail', 'phone',
+          'eye', 'eye-off', 'edit', 'trash', 'plus', 'minus', 'check', 'alert-circle',
+          'info-circle', 'heart', 'star', 'bookmark', 'share', 'download', 'upload'
+        ]
+      }
 
       // Custom file with only few icons
       /* {
