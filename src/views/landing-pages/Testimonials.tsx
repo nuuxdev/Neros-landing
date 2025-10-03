@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef } from 'react'
+
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import ScrollTrigger from 'gsap/ScrollTrigger'
@@ -11,32 +12,32 @@ gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 const testimonials = [
   {
-    name: 'Parent A',
+    name: 'Emawaysh Hailu',
     role: 'Parent of Grade 5',
     quote: "The teachers genuinely care. My child has grown in confidence and curiosity since joining Neros' School."
   },
   {
-    name: 'Alumni B',
+    name: 'Yared Tadesse',
     role: 'Class of 2022',
     quote: 'The balance of academics and extracurriculars prepared me well for university and beyond.'
   },
   {
-    name: 'Alumni C',
+    name: 'Blen Tadele',
     role: 'Class of 2022',
     quote: 'The balance of academics and extracurriculars prepared me well for university and beyond.'
   },
   {
-    name: 'Alumni D',
+    name: 'Biftu Leykun',
     role: 'Class of 2022',
     quote: 'The balance of academics and extracurriculars prepared me well for university and beyond.'
   },
   {
-    name: 'Alumni E',
+    name: 'Bontu Lemma',
     role: 'Class of 2022',
     quote: 'The balance of academics and extracurriculars prepared me well for university and beyond.'
   },
   {
-    name: 'Student C',
+    name: 'Yonas Debru',
     role: 'Grade 9',
     quote: 'Clubs, competitions and supportive friends make every day exciting!'
   }
@@ -46,22 +47,27 @@ export default function Testimonials() {
   const mobileRef = useRef<HTMLDivElement | null>(null)
 
   // Mobile-only auto-scrolling marquee for testimonials
-  useGSAP(() => {
-    const mm = gsap.matchMedia()
-    mm.add('(max-width: 639px)', () => {
-      const track = mobileRef.current?.querySelector('.tst-scroll-track') as HTMLElement | null
-      if (!track) return
-      // We duplicate the items once; half of scrollWidth equals one set width
-      const totalWidth = track.scrollWidth / 2
-      const tween = gsap.fromTo(
-        track,
-        { x: 0 },
-        { x: -totalWidth, duration: 30, ease: 'none', repeat: -1 }
-      )
-      return () => tween.kill()
-    })
-    return () => mm.revert()
-  }, { scope: mobileRef })
+  useGSAP(
+    () => {
+      const mm = gsap.matchMedia()
+
+      mm.add('(max-width: 639px)', () => {
+        const track = mobileRef.current?.querySelector('.tst-scroll-track') as HTMLElement | null
+
+        if (!track) return
+
+        // We duplicate the items once; half of scrollWidth equals one set width
+        const totalWidth = track.scrollWidth / 2
+
+        const tween = gsap.fromTo(track, { x: 0 }, { x: -totalWidth, duration: 30, ease: 'none', repeat: -1 })
+
+        return () => tween.kill()
+      })
+
+      return () => mm.revert()
+    },
+    { scope: mobileRef }
+  )
 
   return (
     <section id='testimonials' className='plb-[100px] bg-backgroundDefault'>

@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import ScrollTrigger from 'gsap/ScrollTrigger'
@@ -48,6 +49,31 @@ export default function AboutUs() {
             teaching methods, moral guidance, and community support. From the outset, Neros’ School emphasized academic
             excellence, creativity, and character development.
           </Typography>
+          <Typography variant='h5' className='font-bold'>
+            Expansion of Branches
+          </Typography>
+          <Typography className='text-lg max-w-3xl leading-relaxed mt-2 sm:mt-3'>
+            Since its establishment, Neros’ School has grown into a thriving educational institution, expanding from a
+            single branch in 2006 EC to four vibrant campuses today.
+          </Typography>
+          <List className='space-y-2 sm:space-y-3'>
+            <ListItem className='px-0 py-2 flex items-start gap-3'>
+              <i className='tabler-number-1 text-primary' />
+              <Typography variant='h6'>Awura Godana Kindergarten Branch (Since 2006EC)</Typography>
+            </ListItem>
+            <ListItem className='px-0 py-2 flex items-start gap-3'>
+              <i className='tabler-number-2 text-primary' />
+              <Typography variant='h6'>College Primary Branch (Since 2014)</Typography>
+            </ListItem>
+            <ListItem className='px-0 py-2 flex items-start gap-3'>
+              <i className='tabler-number-3 text-primary' />
+              <Typography variant='h6'>Bole Kindergarten Branch(Since 2012EC)</Typography>
+            </ListItem>
+            <ListItem className='px-0 py-2 flex items-start gap-3'>
+              <i className='tabler-number-4 text-primary' />
+              <Typography variant='h6'>180 Primary 1–4 and KG Branch</Typography>
+            </ListItem>
+          </List>
         </div>
 
         <Grid container spacing={10} alignItems='center'>
@@ -63,7 +89,7 @@ export default function AboutUs() {
               />
               <div className='text-center pb-4'>
                 <Typography variant='h5' className='font-semibold'>
-                  Baba
+                  Muluwengel E. Gabriel
                 </Typography>
                 <Typography variant='body2' className='text-muted'>
                   Founder
@@ -75,30 +101,13 @@ export default function AboutUs() {
           <Grid size={{ xs: 12, md: 4 }}>
             <div className='about-content space-y-6 md:space-y-7 text-center sm:text-start'>
               <Typography variant='h5' className='font-bold'>
-                Expansion of Branches
+                Message from Our Founders
               </Typography>
-              <Typography className='text-base leading-relaxed'>
-                Since its establishment, Neros’ School has grown into a thriving educational institution, expanding from
-                a single branch in 2006 EC to four vibrant campuses today.
+              <Typography className='text-xl leading-relaxed'>
+                We are proud of how far our school has come, and we remain committed to inspiring, nurturing, and
+                empowering every child to become a confident, knowledgeable, and socially responsible leader of
+                tomorrow.
               </Typography>
-              <List className='space-y-2 sm:space-y-3'>
-                <ListItem className='px-0 py-2 flex items-start gap-3'>
-                  <i className='tabler-number-1 text-primary' />
-                  <Typography variant='h6'>Awura Godana Kindergarten Branch (Since 2006EC)</Typography>
-                </ListItem>
-                <ListItem className='px-0 py-2 flex items-start gap-3'>
-                  <i className='tabler-number-2 text-primary' />
-                  <Typography variant='h6'>College Primary Branch (Since 2014)</Typography>
-                </ListItem>
-                <ListItem className='px-0 py-2 flex items-start gap-3'>
-                  <i className='tabler-number-3 text-primary' />
-                  <Typography variant='h6'>Bole Kindergarten Branch(Since 2012EC)</Typography>
-                </ListItem>
-                <ListItem className='px-0 py-2 flex items-start gap-3'>
-                  <i className='tabler-number-4 text-primary' />
-                  <Typography variant='h6'>180 Primary 1–4 and KG Branch</Typography>
-                </ListItem>
-              </List>
               <div className='pt-4 sm:pt-6'>
                 <Button
                   variant='contained'
@@ -124,7 +133,7 @@ export default function AboutUs() {
               />
               <div className='text-center pb-4'>
                 <Typography variant='h4' className='font-semibold'>
-                  Belibe
+                  Hanna Mohammed
                 </Typography>
                 <Typography variant='body2' className='text-muted text-lg'>
                   Founder and Ceo.
