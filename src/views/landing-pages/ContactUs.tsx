@@ -22,7 +22,7 @@ export default function ContactUs() {
         <div className='contact-title flex flex-col gap-3 items-center text-center'>
           <Chip size='medium' variant='tonal' color='primary' label='Contact Us' />
           <Typography variant='h4' className='font-extrabold'>
-            We'd love to hear from you
+            We&apos;d love to hear from you
           </Typography>
           <Typography className='max-w-3xl'>Reach out for admissions, campus tours, or general enquiries.</Typography>
         </div>
@@ -58,14 +58,16 @@ export default function ContactUs() {
                 {/* Row 1: Branch 1 + Branch 2 with vertical divider */}
                 <div className='flex items-stretch gap-4'>
                   <div className='flex-1 space-y-2'>
-                    <Typography variant='subtitle2' className='font-semibold'>Awura Godana KG</Typography>
+                    <Typography variant='subtitle2' className='font-semibold'>
+                      Awura Godana KG
+                    </Typography>
                     <div className='flex items-center gap-2'>
                       <i className='tabler-map-pin' />
                       <Typography variant='body2'>Adama, Ethiopia</Typography>
                     </div>
                     <div className='flex items-center gap-2'>
-                      <i className='tabler-phone' />
-                      <Typography variant='body2'>+251 900 000 001</Typography>
+                      <i className='tabler-phone text-primary' />
+                      <Typography variant='body2'>+251 222 126586</Typography>
                     </div>
                     <div className='flex items-center gap-2'>
                       <i className='tabler-mail' />
@@ -76,14 +78,16 @@ export default function ContactUs() {
                   <Divider orientation='vertical' flexItem />
 
                   <div className='flex-1 space-y-2'>
-                    <Typography variant='subtitle2' className='font-semibold'>College Primary</Typography>
+                    <Typography variant='subtitle2' className='font-semibold'>
+                      College Primary
+                    </Typography>
                     <div className='flex items-center gap-2'>
                       <i className='tabler-map-pin' />
                       <Typography variant='body2'>Adama, Ethiopia</Typography>
                     </div>
                     <div className='flex items-center gap-2'>
-                      <i className='tabler-phone' />
-                      <Typography variant='body2'>+251 900 000 002</Typography>
+                      <i className='tabler-phone text-primary' />
+                      <Typography variant='body2'>+251 222 116470</Typography>
                     </div>
                     <div className='flex items-center gap-2'>
                       <i className='tabler-mail' />
@@ -98,14 +102,16 @@ export default function ContactUs() {
                 {/* Row 2: Branch 3 + Branch 4 with vertical divider */}
                 <div className='flex items-stretch gap-4'>
                   <div className='flex-1 space-y-2'>
-                    <Typography variant='subtitle2' className='font-semibold'>Bole KG</Typography>
+                    <Typography variant='subtitle2' className='font-semibold'>
+                      Bole KG
+                    </Typography>
                     <div className='flex items-center gap-2'>
                       <i className='tabler-map-pin' />
                       <Typography variant='body2'>Adama, Ethiopia</Typography>
                     </div>
                     <div className='flex items-center gap-2'>
-                      <i className='tabler-phone' />
-                      <Typography variant='body2'>+251 900 000 003</Typography>
+                      <i className='tabler-phone text-primary' />
+                      <Typography variant='body2'>+251 222 114343</Typography>
                     </div>
                     <div className='flex items-center gap-2'>
                       <i className='tabler-mail' />
@@ -116,14 +122,16 @@ export default function ContactUs() {
                   <Divider orientation='vertical' flexItem />
 
                   <div className='flex-1 space-y-2'>
-                    <Typography variant='subtitle2' className='font-semibold'>180 Primary & KG</Typography>
+                    <Typography variant='subtitle2' className='font-semibold'>
+                      180 Primary & KG
+                    </Typography>
                     <div className='flex items-center gap-2'>
                       <i className='tabler-map-pin' />
                       <Typography variant='body2'>Adama, Ethiopia</Typography>
                     </div>
                     <div className='flex items-center gap-2'>
-                      <i className='tabler-phone' />
-                      <Typography variant='body2'>+251 900 000 004</Typography>
+                      <i className='tabler-phone text-primary' />
+                      <Typography variant='body2'>+251 222 113296</Typography>
                     </div>
                     <div className='flex items-center gap-2'>
                       <i className='tabler-mail' />
